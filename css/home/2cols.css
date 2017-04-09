@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/***************************************************
+ 		HERE'S YOUR RESPONSIVE GRID SYSTEM.
+ ***************************************************/
+ 
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float: left;
+	margin: 0;
+}
+
+.col:first-child {
+	margin-left: 0;
+}
+
+/*  GROUPING  */
+.group:before, .group:after { 
+	content: "";
+	display: table; 
+}
+
+.group:after { 
+	clear: both;
+}
+
+.group { 
+	zoom: 1; /* For IE 6/7 */ 
+}
+
+
+
+/***************************************************
+  		TWO-COLUMN GRID FOR ALL OF THAT WORK.
+ ***************************************************/
+ 
+ /*  GRID OF TWO  */
+.homecontainer .span_2_of_2 {
+	width: 100%;
+}
+
+.homecontainer .span_1_of_2 {
+	width: 50%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.homecontainer .span_2_of_2, 
+	.homecontainer .span_1_of_2 { 
+		width: 100%;
+	}
+}
+

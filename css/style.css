@@ -1,0 +1,557 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+  font-family: 'Mark';
+  font-weight: bold;
+  src: url('../assets/fonts/Mark-Bold/markbold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/Mark-Bold/markbold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/Mark-Bold/markbold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/fonts/Mark-Bold/markbold-webfont.otf')  format('opentype'), /* Safari, Android, iOS */
+       url('../assets/fonts/Mark-Bold/markbold-webfont.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Mark';
+  font-weight: normal;
+  src: url('../assets/fonts/Mark-Regular/markregular-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/Mark-Regular/markregular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/Mark-Regular/markregular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/fonts/Mark-Regular/markregular-webfont.otf')  format('opentype'), /* Safari, Android, iOS */
+       url('../assets/fonts/Mark-Regular/markregular-webfont.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Mark';
+  font-style: italic;
+  src: url('../assets/fonts/Mark-RegularItalic/markregularitalic-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/Mark-RegularItalic/markregularitalic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/Mark-RegularItalic/markregularitalic-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/fonts/Mark-RegularItalic/markregularitalic-webfont.otf')  format('opentype'), /* Safari, Android, iOS */
+       url('../assets/fonts/Mark-RegularItalic/markregularitalic-webfont.svg') format('svg'); /* Legacy iOS */
+}
+
+
+html, body {
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+}
+
+/***************************************************
+ 			   NAVIGATING THROUGH LIFE.
+ ***************************************************/
+.logo {
+	display: block;
+	position: absolute;
+	white-space: nowrap;
+	text-align: left;
+	top: 25px;
+	opacity: 1;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+li {
+	padding: 0;
+	margin: 0;
+}
+
+nav {
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	position: fixed;
+	overflow: hidden;
+	opacity: 0.9;
+	z-index: 9;
+}
+
+nav ul {
+	text-align: right;
+	height: 55px;
+	padding: 30px 0;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	color: #B5B7B7;
+	font-family: Mark;
+	font-size: 95%;
+	font-weight: bold;
+	list-style: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: inline-block;
+	padding: 1em 3em;
+}
+
+nav ul li a:hover {
+	text-decoration: none;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+/* INACTIVE NAV LINK */
+nav ul li a.home:hover, nav ul li a.home.active {
+	color: #B7E1DA;
+}
+
+nav ul li a.work:hover, nav ul li a.work.active {
+	color: #87CFC4;
+}
+
+nav ul li a.about:hover, nav ul li a.about.active {
+	color: #B66465;
+}
+
+nav ul li a.contact:hover, nav ul li a.contact.active {
+	color: #F26652;
+}
+
+.button img {
+	display: inline;
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	width: 70px;
+}
+
+/* CODE FOR OVERLAY NAVIGATION MENU. */
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.9);
+	overflow: auto;
+	z-index: 1;
+}
+
+.wrap {
+	color: #FFFFFF;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.wrap ul.wrap-nav {
+	text-transform: uppercase;
+	padding: 150px 0px 100px;
+}
+
+.wrap ul.wrap-nav > li {
+	font-family: Mark;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	display: inline-block;
+	vertical-align: top;
+	width: 24%;
+	position: relative; 
+}
+
+.wrap ul.wrap-nav > li a {
+	color: #B5B7B7;
+	display: block;
+	padding: 8px 0;
+	text-decoration: none;
+}
+
+.wrap ul.wrap-nav > li a.work:hover {
+	color: #87CFC4;
+}
+
+.wrap ul.wrap-nav > li a.about:hover {
+	color: #B66465;
+}
+
+.wrap ul.wrap-nav ul {
+	padding: 20px 0;
+}
+
+.wrap ul.wrap-nav ul li {
+	display: block;
+	font-size: 16px;
+	width: 100%;
+	color: #B5B7B7;
+}
+
+.wrap ul.wrap-nav ul li a {
+	color: #B5B7B7;
+}
+
+
+
+/***************************************************
+ 		  WORK, WORK, WORK, WORK, WORK, WORK. 
+ ***************************************************/
+
+.homecontainer {
+	padding-top: 100px;
+	margin: 0;
+}
+
+.colorbox {
+	cursor: pointer;
+	height: auto;
+	width: auto;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.colorbox img {
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: bottom;
+}
+
+/* ONLY BECAUSE FIREFOX DOESN'T SUPPORT MAX-WIDTH */
+@-moz-document url-prefix() {
+    .colorbox img {
+        width: 100%;
+    }
+}
+
+// Styles for IE10
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .colorbox img {
+        width: 100%;
+    }
+}
+
+.colorbox:hover img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.colorbox .coloroverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #FFFFFF;
+	z-index: 0;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	padding: 0;
+}
+
+.colorbox:hover .coloroverlay {
+	opacity: 0.9;
+}
+
+.colorbox #project1 {
+	background-color: #B7E1DA;
+}
+
+.colorbox #project2 {
+	background-color: #87CFC4;
+}
+
+.colorbox #project3 {
+	background-color: #C17D7B;
+}
+
+.colorbox #project4 {
+	background-color: #B66465;
+}
+
+.colorbox #project5 {
+	background-color: #F7A089;
+}
+
+.colorbox #project6 {
+	background-color: #F26652;
+}
+
+.colorbox .overtext {
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	-webkit-transform: translateY(40px);
+	transform: translateY(40px);
+}
+
+.colorbox .title {
+	font-size: 175%;
+	font-family: Mark;
+	font-weight: bold;
+	text-align: center;
+	width: inherit;
+	height: inherit;
+	opacity: 0;
+	padding-top: 30%;
+	transition-delay: 0.1s;
+	transition-duration: 0.2s;
+}
+
+.colorbox:hover .title, .colorbox:focus .title {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+
+
+/***************************************************
+ 		  PROJECTS ON PROJECTS ON PROJECTS. 
+ ***************************************************/
+ 
+ .container {
+	 max-width: 960px;
+	 margin: 0 auto;
+}
+
+.container img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.module:last-child {
+	margin-bottom: 0;
+}
+
+.module p, .module h2 {
+	margin-bottom: 20px;
+}
+
+.module p:last-child {
+	margin-bottom: 0;
+}
+
+.module.content {
+	padding: 40px 0;
+}
+
+.module.content a:link, .module.content a:active, 
+.module.content a:visited {
+	font-weight: bold;
+	font-style: none;
+	color: #b5b7b7;
+	text-decoration: none;
+}
+
+.module.content a:hover {
+	color: #87CFC4;
+	text-decoration: none;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.herooverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 600px;
+	background-color: rgba(51,51,51,0.7);
+}
+
+.module.header, .module.image {
+	height: 600px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.module.header h1 {
+	color: #ffffff;
+	font-size: 320%;
+	line-height: 57.6px;
+	font-weight: bold;
+	text-align: center;
+	padding: 30% 0 0 0;
+}
+
+.module.header h2 {
+	padding-top: 50px;
+}
+
+#heroimage1 {
+	background-image: url("../assets/images/work/beach-house_hero.jpg");
+}
+
+#heroimage2 {
+	background-image: url("../assets/images/work/thirdwall_hero.jpg");
+}
+
+#heroimage3 {
+	background-image: url("../assets/images/work/my-month-on-tinder_hero.jpg");
+}
+
+#heroimage4 {
+	background-image: url("../assets/images/work/thank-you-cards_hero.jpg");
+}
+
+#heroimage5 {
+	background-image: url("../assets/images/work/open24-website_hero.jpg");
+}
+
+
+
+/***************************************************
+ 		  	  WHAT YOU KNOW ABOUT ME? 
+ ***************************************************/
+.maincontainer {
+	padding-top: 100px;
+	margin: 0;
+}
+
+.portrait {
+	margin: 0;
+	padding: 0;
+}
+
+.portrait img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+.bio {
+	margin: 10%;
+}
+
+.bio h2 {
+	color: #B66465;
+}
+
+
+	
+/**************************************************
+			 YOU HAVE MY CONTACT INFO.
+***************************************************/
+.contactinfo {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.contactinfo h1 {
+	color: #FFFFFF;
+	font-size: 320%;
+	line-height: 57.6px;
+	font-weight: bold;
+	text-align: center;
+	padding: 30% 0 0 0;
+}
+
+.contactinfo a img {
+	width: 70px;
+	height: 70px;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.orangegradient {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    background: #f7a089; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f26652, #f7a089); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f26652, #f7a089); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f26652, #f7a089); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f26652, #f7a089); /* Standard syntax */
+}
+
+.contactinfo a:hover img {
+	width: 70px;
+	height: 70px;
+	-webkit-filter: none;
+	filter: none;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	
+}
+
+#contacticons {
+	width: 24%;
+	margin: auto;
+	padding-top: 2%;
+	display: block;
+}
+
+
+
+
+/***************************************************
+ 				YOU'RE JUST MY TYPE. 
+ ***************************************************/
+h1 {
+	font-family: Mark;
+	font-weight: bold;
+	font-size: 300%;
+	color: #FFFFFF;
+	line-height: 120%;
+	text-align: center;
+}
+
+h2 {
+	font-family: Mark;
+	font-weight: bold;
+	font-size: 200%;
+	color: #87cfc4;
+	line-height: 125%;
+	text-align: left;
+	padding: 10px;
+}
+
+h3 {
+	font-family: Mark;
+	font-style: italic;
+	font-size: 200%;
+	color: #FFFFFF;
+	line-height: 140%;
+	text-align: center;
+	padding: 10px;
+}
+
+p {
+	font-family: Mark;
+	font-weight: normal;
+	font-size: 100%;
+	color: #333333;
+	line-height: 180%;
+	text-align: left;
+	padding: 10px;
+}
+
+em {
+	font-style: italic;
+}
