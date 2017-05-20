@@ -7,4 +7,5 @@
 * Research and implement page transitions *(for smoother site functionality)*
 * Add new projects onto site
 * Begin brainstorming and initial prototyping for site redesign
+* Figure out how to improve web build for portfolio site 2.0
 * Clean-up code
