@@ -162,7 +162,7 @@ nav ul li a.contact:hover, nav ul li a.contact.active {
 	display: inline-block;
 	vertical-align: top;
 	width: 24%;
-	position: relative; 
+	position: relative;
 }
 
 .wrap ul.wrap-nav > li a {
@@ -198,7 +198,7 @@ nav ul li a.contact:hover, nav ul li a.contact.active {
 
 
 /***************************************************
- 		  WORK, WORK, WORK, WORK, WORK, WORK. 
+ 		  WORK, WORK, WORK, WORK, WORK, WORK.
  ***************************************************/
 
 .homecontainer {
@@ -322,9 +322,9 @@ nav ul li a.contact:hover, nav ul li a.contact.active {
 
 
 /***************************************************
- 		  PROJECTS ON PROJECTS ON PROJECTS. 
+ 		  PROJECTS ON PROJECTS ON PROJECTS.
  ***************************************************/
- 
+
  .container {
 	 max-width: 960px;
 	 margin: 0 auto;
@@ -351,7 +351,7 @@ nav ul li a.contact:hover, nav ul li a.contact.active {
 	padding: 40px 0;
 }
 
-.module.content a:link, .module.content a:active, 
+.module.content a:link, .module.content a:active,
 .module.content a:visited {
 	font-weight: bold;
 	font-style: none;
@@ -399,11 +399,11 @@ nav ul li a.contact:hover, nav ul li a.contact.active {
 }
 
 #heroimage1 {
-	background-image: url("../assets/images/work/beach-house_hero.jpg");
+	background-image: url("../assets/images/work/thirdwall_hero.jpg");
 }
 
 #heroimage2 {
-	background-image: url("../assets/images/work/thirdwall_hero.jpg");
+	background-image: url("../assets/images/work/beach-house_hero.jpg");
 }
 
 #heroimage3 {
@@ -418,10 +418,19 @@ nav ul li a.contact:hover, nav ul li a.contact.active {
 	background-image: url("../assets/images/work/open24-website_hero.jpg");
 }
 
+#heroimage6 {
+	background-image: url("../assets/images/work/wellsfargo-whsl-healthcare_hero.png");
+}
+
+.subcopy {
+  font-size: 87.5%;
+  line-height: 32px;
+}
+
 
 
 /***************************************************
- 		  	  WHAT YOU KNOW ABOUT ME? 
+ 		  	  WHAT YOU KNOW ABOUT ME?
  ***************************************************/
 .maincontainer {
 	padding-top: 100px;
@@ -448,7 +457,7 @@ nav ul li a.contact:hover, nav ul li a.contact.active {
 }
 
 
-	
+
 /**************************************************
 			 YOU HAVE MY CONTACT INFO.
 ***************************************************/
@@ -497,7 +506,7 @@ nav ul li a.contact:hover, nav ul li a.contact.active {
 	-moz-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
-	
+
 }
 
 #contacticons {
@@ -511,7 +520,7 @@ nav ul li a.contact:hover, nav ul li a.contact.active {
 
 
 /***************************************************
- 				YOU'RE JUST MY TYPE. 
+ 				YOU'RE JUST MY TYPE.
  ***************************************************/
 h1 {
 	font-family: Mark;
@@ -550,6 +559,10 @@ p {
 	line-height: 180%;
 	text-align: left;
 	padding: 10px;
+}
+
+b {
+  color: #000000;
 }
 
 em {
